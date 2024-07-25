@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Inter', sans-serif;
+	font-size: 1em;
 }
 body {
 	background-color: hsl(0, 0%, 8%);
@@ -34,18 +35,56 @@ li {
 }
 /* HEADER STYLING */
 header {
-	border: 3px solid red;
 	margin: 0 auto;
 }
 
 .profile-image {
-	margin: 0 auto;
-	justify-content: flex-end;
-	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 .pp {
 	border-radius: 50%;
-	width: 50%;
+	width: 30%;
+}
+
+/* PROFILE DETAILS STYLING */
+.profile-details {
+	text-align: center;
+	margin: 1em 0;
+}
+.profile-name {
+	color: hsl(0, 0%, 100%);
+	margin: 0.5em 0;
+	font-size: 1.2em;
+}
+.profile-location {
+	color: hsl(75, 94%, 57%);
+	font-size: 0.7em;
+}
+.profile-bio {
+	font-size: 0.6em;
+	color: white;
+	margin-top: 1.5em;
+}
+
+/* PROFILE LINKS STYLING */
+.profile-links li {
+	padding: 0.5em 0;
+	border-radius: 10px;
+	background-color: hsl(0, 0%, 20%);
+	margin: 0.5em 0;
+	text-align: center;
+	cursor: pointer;
+}
+.links {
+	font-size: 0.7em;
+	color: hsl(0, 0%, 100%);
+}
+
+.profile-links li:hover,
+.profile-links li:hover > .links {
+	background-color: hsl(75, 94%, 57%);
+	color: hsl(0, 0%, 8%);
 }
 /* ATTRIBUTION STYLING */
 .attribution {
